@@ -135,7 +135,7 @@ async function sendMessage(recipientId, message) {
 async function sendSingleMessage(recipientId, message) {
   try {
     await axios.post(
-      "https://graph.facebook.com/v19.0/me/messages",
+      "https://graph.facebook.com/v21.0/me/messages",
       {
         recipient: { id: recipientId },
         message: { text: message }
